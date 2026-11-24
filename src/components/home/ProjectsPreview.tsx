@@ -2,13 +2,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { useRef } from "react";
-import { useProjects } from "@/lib/portfolio";
+import { projects as allProjects } from "@/data/projects";
 import ProjectCover from "@/components/projects/ProjectCover";
 
 
 const ProjectsPreview = () => {
-  const { data } = useProjects();
-  const projects = (data ?? []).slice(0, 3);
+  const projects = allProjects.slice(0, 3);
   const sectionRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,

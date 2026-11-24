@@ -3,46 +3,23 @@ import { motion } from "framer-motion";
 import Layout from "@/components/layout/Layout";
 import ImageSlider from "@/components/projects/ImageSlider";
 import ProjectCover from "@/components/projects/ProjectCover";
-import { useProject } from "@/lib/portfolio";
-import { ArrowLeft, ExternalLink, Github, Calendar, Layers, ArrowRight, Loader2 } from "lucide-react";
+import { getProjectById, getRelatedProjects } from "@/data/projects";
+import { ArrowLeft, ExternalLink, Github, Calendar, Layers, ArrowRight } from "lucide-react";
 
 const ProjectDetails = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { project, related, isLoading, isError, refetch } = useProject(id || "");
-
-  if (isLoading) {
-    return (
-      <Layout>
-        <section className="py-24 min-h-screen flex items-center justify-center text-muted-foreground">
-          <Loader2 className="animate-spin" size={32} />
-        </section>
-      </Layout>
-    );
-  }
+  const project = getProjectById(id || "");
+  const related = project ? getRelatedProjects(project) : [];
 
   if (!project) {
     return (
       <Layout>
         <section className="py-24 min-h-screen flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">
-              {isError ? "Couldn't Load Project" : "Project Not Found"}
-            </h1>
-            <p className="text-muted-foreground mb-8">
-              {isError
-                ? "Something went wrong while loading this project."
-                : "The project you're looking for doesn't exist."}
-            </p>
+            <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
+            <p className="text-muted-foreground mb-8">The project you're looking for doesn't exist.</p>
             <div className="flex gap-4 justify-center">
-              {isError && (
-                <button
-                  onClick={() => refetch()}
-                  className="px-6 py-3 bg-secondary text-secondary-foreground rounded-xl font-semibold"
-                >
-                  Try again
-                </button>
-              )}
               <Link
                 to="/projects"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-xl font-semibold"

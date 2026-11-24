@@ -2,15 +2,13 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
-import { ExternalLink, ArrowRight, Loader2 } from "lucide-react";
-import { useProjects } from "@/lib/portfolio";
+import { ExternalLink, ArrowRight } from "lucide-react";
+import { projects, projectCategories } from "@/data/projects";
 import ProjectCover from "@/components/projects/ProjectCover";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
-  const { data: projects = [], isLoading, isError, refetch } = useProjects();
-
-  const categories = ["All", ...Array.from(new Set(projects.flatMap((p) => p.categories)))];
+  const categories = ["All", ...projectCategories];
 
   const filteredProjects = activeCategory === "All"
     ? projects
@@ -65,23 +63,6 @@ const Projects = () => {
               </button>
             ))}
           </motion.div>
-
-          {isLoading && (
-            <div className="flex justify-center py-16 text-muted-foreground">
-              <Loader2 className="animate-spin" size={32} />
-            </div>
-          )}
-          {isError && (
-            <div className="text-center py-16">
-              <p className="text-muted-foreground mb-4">Couldn't load projects right now.</p>
-              <button
-                onClick={() => refetch()}
-                className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-medium text-sm"
-              >
-                Try again
-              </button>
-            </div>
-          )}
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

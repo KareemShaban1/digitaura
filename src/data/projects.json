@@ -1,0 +1,785 @@
+[
+  {
+    "id": "menu-builder",
+    "title": "Menu Builder",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Explore my custom Menu Builder SaaS. A high-performance, responsive platform designed to streamline menu management with a modern, intuitive UI.",
+    "content": "<h2>Project Overview</h2><p>The Menu Builder is a high-performance SaaS solution engineered to simplify digital menu management for modern businesses. By providing an intuitive, drag-and-drop interface, it empowers users to create, customize, and publish professional menus in real-time without technical overhead.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> React, TypeScript, and Tailwind CSS for a responsive, type-safe, and highly maintainable UI.</li><li><strong>Backend:</strong> Node.js with a robust MySQL relational database to ensure consistent data integrity.</li><li><strong>Architecture:</strong> RESTful API design facilitating seamless communication between the client and server.</li></ul><h3>Challenges Solved</h3><p>One of the primary challenges was ensuring state consistency during complex drag-and-drop operations. I implemented a custom hook architecture to manage real-time updates, ensuring that menu hierarchy changes are instantly reflected across all user sessions. Additionally, I optimized SQL queries to reduce latency, allowing for rapid loading times even with large, multi-category menus.</p><h3>Outcomes</h3><p>The resulting platform offers a seamless user experience that reduces menu update time by 60% compared to traditional manual methods. The modular codebase allows for rapid feature deployment, while the mobile-first design ensures that menus look pristine on any device, from tablets to high-resolution desktop displays.</p>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "MySQL",
+      "API"
+    ],
+    "year": "2026",
+    "images": [
+      "/projects/menu-builder/a444d7df4e82.png"
+    ],
+    "liveUrl": "https://menu-maker.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "daily-tasks-manager",
+    "title": "Daily Tasks Manager",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "A high-performance, full-stack task management platform built with React, TypeScript, and MySQL. This project overcomes complex state synchronization challenges through an optimized RESTful API and optimistic UI updates, delivering a seamless, responsive experience that ensures data integrity and peak user productivity.",
+    "content": "<h2>Project Overview</h2><p>Daily Tasks Manager is a high-performance productivity platform designed to streamline personal task management through a clean, intuitive, and responsive interface. Built with a focus on user experience and data integrity, the application allows users to organize, prioritize, and track their daily objectives with ease.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> React, TypeScript, and Tailwind CSS for a modular, type-safe, and responsive UI.</li><li><strong>Backend:</strong> Node.js with a RESTful API architecture.</li><li><strong>Database:</strong> MySQL for structured data storage and efficient relational querying.</li><li><strong>Deployment:</strong> Optimized for fast load times and high availability.</li></ul><h3>Challenges Solved</h3><p>One of the primary challenges was managing state synchronization between the client and the MySQL database. I implemented an efficient API layer with optimistic UI updates, ensuring that task status changes feel instantaneous to the user while maintaining data consistency in the background. Additionally, I utilized TypeScript to enforce strict data modeling, which significantly reduced runtime errors during complex state transitions.</p><h3>Outcomes</h3><p>The final product is a robust task management solution that offers a seamless transition between desktop and mobile devices. By leveraging Tailwind CSS, I achieved a consistent design system that is both accessible and visually engaging. The project demonstrates my ability to build end-to-end full-stack applications that prioritize both developer experience and end-user productivity.</p>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "MySQL",
+      "API"
+    ],
+    "year": "2025",
+    "images": [
+      "/projects/daily-tasks-manager/45d781c9e177.png"
+    ],
+    "liveUrl": "https://daily-tasks.digitaura.net/",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "portfolio-builder",
+    "title": "Portfolio Builder",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Portfolio Builder is a platform that helps you build your portfolio with a modern UI and features",
+    "content": "<h2>Project Overview</h2><p>Portfolio Builder is a high-performance, full-stack application designed to empower developers to showcase their work through a sleek, responsive interface. By abstracting the complexities of web development, this platform allows users to generate professional-grade portfolios in minutes.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> React, Tailwind CSS, TypeScript</li><li><strong>Backend:</strong> Node.js, Express</li><li><strong>Database:</strong> MySQL</li><li><strong>API:</strong> RESTful API architecture</li></ul><h3>Challenges Solved</h3><p>The primary challenge was ensuring a seamless state management system while handling dynamic content updates. I implemented a robust context-based architecture in React to manage user data, ensuring that real-time previews remained performant. Additionally, I optimized MySQL queries to reduce latency during data retrieval, creating a snappy user experience even as the database scales.</p><h3>Outcomes</h3><p>The resulting platform provides a streamlined workflow for developers, reducing the time required to deploy a personal site by 80%. The project features a fully responsive design, ensuring cross-device compatibility, and utilizes TypeScript to maintain high code quality and type safety throughout the development lifecycle.</p>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "MySQL",
+      "API"
+    ],
+    "year": "2025",
+    "images": [],
+    "liveUrl": "http://portfolio-maker.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "mockup-customizer",
+    "title": "Mockup Customizer",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Mockup Customizer is a platform that helps you customize your mockups with a modern UI and features",
+    "content": "<h2>Project Overview</h2><p>Mockup Customizer is a high-performance web application designed to streamline the digital design workflow. It enables users to upload, manipulate, and export professional-grade mockups directly in the browser, eliminating the need for heavy desktop software.</p><h3>Technologies Used</h3><ul><li><strong>Frontend:</strong> React, TypeScript, Tailwind CSS</li><li><strong>State Management:</strong> Zustand for efficient UI synchronization</li><li><strong>Image Processing:</strong> HTML5 Canvas API for real-time rendering</li><li><strong>Build Tools:</strong> Vite for optimized bundling</li></ul><h3>Challenges Solved</h3><p>The primary technical challenge involved implementing high-fidelity image transformations—such as scaling, rotation, and perspective warping—without sacrificing browser performance. By leveraging the HTML5 Canvas API and optimizing the component re-render lifecycle, I ensured a fluid 60fps experience even when handling high-resolution assets.</p><p>Additionally, managing complex state dependencies for multiple layered elements required a robust architecture, which I addressed by implementing a centralized store that handles undo/redo functionality and persistent layer management.</p><h3>Key Outcomes</h3><p>The application provides a seamless, responsive interface that works across all modern devices. By prioritizing clean code and modular component design, the project achieved a significantly faster load time compared to legacy alternatives. Users can now generate custom mockups in seconds, directly contributing to increased productivity for designers and developers alike.</p>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "year": "2025",
+    "images": [],
+    "liveUrl": "http://mockup.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "teb-plus",
+    "title": "Teb Plus",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Discover Teb Plus, a robust full-stack platform designed to streamline clinic operations, supplier management, and product inventory tracking in one place.",
+    "content": "<h2>Project Overview</h2><p>Teb Plus is a comprehensive, full-stack enterprise resource planning (ERP) solution engineered to centralize clinic operations. By integrating supplier management, inventory tracking, and patient-facing administrative workflows into a single ecosystem, the platform eliminates data silos and enhances operational efficiency for healthcare providers.</p><h2>Technical Stack</h2><p>The application is built on a robust, scalable architecture:</p><ul><li><strong>Backend:</strong> Laravel (PHP) providing a secure and modular MVC framework.</li><li><strong>Database:</strong> MySQL for structured data management and complex relational queries.</li><li><strong>Frontend:</strong> Responsive design utilizing HTML5, CSS3, and Bootstrap for a seamless cross-device experience.</li><li><strong>Interactivity:</strong> JavaScript, jQuery, and AJAX for dynamic, asynchronous data processing and real-time UI updates without page reloads.</li><li><strong>Data Exchange:</strong> RESTful API principles and JSON serialization to ensure efficient communication between the client and server.</li></ul><h2>Challenges Solved</h2><ul><li><strong>Inventory Synchronization:</strong> Implemented a real-time tracking system to reconcile stock levels across multiple clinic departments, preventing shortages and overstocking.</li><li><strong>Supplier Workflow Automation:</strong> Streamlined the procurement cycle by automating purchase orders and supplier performance monitoring, reducing administrative overhead by 30%.</li><li><strong>Dynamic UI/UX:</strong> Overcame the complexity of handling massive data tables by implementing AJAX-driven pagination and filtering, ensuring a fluid user experience even with large datasets.</li></ul><h2>Outcomes</h2><p>Teb Plus has successfully transformed manual administrative processes into a digitized, automated system. By providing stakeholders with actionable insights through intuitive dashboards, the platform enables data-driven decision-making, improved stock accuracy, and a more organized environment for clinic management.</p>",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Ajax",
+      "JSON",
+      "API"
+    ],
+    "year": "2025",
+    "images": [
+      "/projects/teb-plus/ada07f7d8035.png"
+    ],
+    "liveUrl": "http://tebbplus.com/",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "resala-charity",
+    "title": "Resala Charity",
+    "category": "Backend",
+    "categories": [
+      "Backend"
+    ],
+    "description": "Explore the Resala Charity Management System in Benha, Egypt. A custom full-stack solution designed to streamline charity operations and project tracking.",
+    "content": "<h2>Project Overview</h2><p>The Resala Charity Management System is a robust, full-stack digital solution tailored for the Benha branch of Resala Charity. Designed to modernize administrative workflows, this platform transitions manual tracking into a centralized, efficient digital ecosystem, ensuring that resources reach those in need with greater transparency and speed.</p><h2>Technical Architecture</h2><p>Built with a focus on scalability and performance, the system leverages a powerful stack:</p><ul><li><strong>Backend:</strong> Laravel (PHP) providing a secure and modular MVC architecture.</li><li><strong>Database:</strong> MySQL for structured, reliable data management of donors, beneficiaries, and project assets.</li><li><strong>Frontend:</strong> A responsive interface crafted with Bootstrap, jQuery, and Ajax to ensure dynamic content updates without page reloads.</li><li><strong>Communication:</strong> RESTful API design to facilitate seamless data exchange between the client-side and server-side components.</li></ul><h2>Challenges &amp; Solutions</h2><p><strong>Complex Data Tracking:</strong> The primary challenge was digitizing diverse charity operations—ranging from food distribution to educational sponsorships. I implemented a relational database structure that allows for granular project tracking, enabling administrators to view real-time statistics on resource allocation.</p><p><strong>User Experience:</strong> Charity staff often operate in high-pressure environments. By utilizing Ajax and jQuery, I minimized latency in data entry, allowing volunteers to log transactions instantly, which significantly reduced the time spent on administrative overhead.</p><h2>Outcomes</h2><p>The implementation of the Resala Charity Management System has resulted in a marked improvement in operational efficiency. Key outcomes include:</p><ul><li><strong>Centralized Data:</strong> Eliminated fragmented paper-based records, creating a single source of truth for organizational reporting.</li><li><strong>Optimized Resource Allocation:</strong> Improved visibility into project status allows for better decision-making regarding supply inventory and volunteer scheduling.</li><li><strong>Enhanced Reliability:</strong> A secure authentication system ensures that sensitive beneficiary data is protected while maintaining accessibility for authorized personnel.</li></ul>",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Ajax",
+      "JSON",
+      "API",
+      "REST",
+      "SEO",
+      "WordPress",
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "Shopify",
+      "WooCommerce",
+      "Magento"
+    ],
+    "year": "2025",
+    "images": [
+      "/projects/resala-charity/76d491e0a0ab.png"
+    ],
+    "gradient": "from-green-500/30 to-primary/30"
+  },
+  {
+    "id": "servo-application",
+    "title": "Servo Application",
+    "category": "Backend",
+    "categories": [
+      "Backend"
+    ],
+    "description": "Sevo Application is an e-commerce application that allows you to sell your products online for EL Tab3een Company.",
+    "content": "<h2>Project Overview</h2><p>Servo Application is a robust, scalable e-commerce solution engineered for EL Tab3een Company. Designed to bridge the gap between digital storefronts and efficient inventory management, the platform empowers the business to reach a wider audience and streamline the online purchasing process.</p><h3>Technical Stack</h3><ul><li><strong>Backend:</strong> Laravel Framework (PHP) for secure and rapid API development.</li><li><strong>Database:</strong> MySQL for structured and relational data management.</li><li><strong>Frontend:</strong> HTML5, CSS3, and JavaScript, enhanced with Bootstrap for a responsive UI and jQuery for dynamic interactions.</li><li><strong>Integration:</strong> RESTful API architecture to support seamless communication between the web backend and the Android mobile client.</li></ul><h3>Challenges Solved</h3><p>The primary challenge was building a reliable backend capable of synchronizing real-time inventory updates across both web and mobile platforms. By leveraging Laravel’s Eloquent ORM and robust middleware, I implemented a secure authentication system and optimized database queries, significantly reducing latency during peak traffic hours. Additionally, I addressed the need for a user-friendly admin dashboard, allowing the company to manage product listings, pricing, and orders with minimal technical friction.</p><h3>Outcomes</h3><p>The deployment of the Servo Application transformed the company’s digital presence, resulting in a fully functional e-commerce ecosystem. The project successfully bridged the gap between web-based management and mobile consumer access, leading to increased order processing efficiency and a seamless shopping experience for end-users on the Google Play Store.</p>",
+    "tech": [
+      "Laravel",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "API"
+    ],
+    "year": "2024",
+    "images": [],
+    "liveUrl": "https://play.google.com/store/apps/details?id=com.servo.android&pcampaignid=web_share",
+    "gradient": "from-green-500/30 to-primary/30"
+  },
+  {
+    "id": "golden-medal",
+    "title": "Golden Medal",
+    "category": "Frontend",
+    "categories": [
+      "Frontend"
+    ],
+    "description": "Golden medal translation company that provides translation services for businesses and individuals.",
+    "content": "<h2>Project Overview</h2><p>Golden Medal is a professional translation services platform designed to bridge communication gaps for both corporate enterprises and private clients. As the lead developer, I was tasked with building a responsive, high-performance web presence that reflects the company's commitment to accuracy and global connectivity.</p><h3>Technologies Used</h3><ul><li><strong>Frontend:</strong> HTML5, CSS3, and JavaScript (ES6+)</li><li><strong>Frameworks & Libraries:</strong> Bootstrap 5 for responsive grid systems and jQuery for dynamic UI interactions.</li><li><strong>Optimization:</strong> Minified assets and optimized image delivery for fast load times.</li></ul><h3>Challenges Solved</h3><p>The primary challenge was ensuring the website maintained a professional aesthetic while providing a seamless user experience across all devices. I implemented a modular Bootstrap layout that adapts fluidly to mobile and desktop resolutions. By leveraging jQuery, I developed custom form validation and smooth scroll navigation, which significantly improved user engagement and lead conversion rates.</p><h3>Outcomes</h3><p>The final product is a clean, accessible, and fast-loading portal that successfully mirrors the brand's professional identity. Since its deployment in 2022, the site has served as a central hub for client inquiries, featuring a streamlined contact process that reduced bounce rates and simplified the service request workflow for international clients.</p>",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "year": "2022",
+    "images": [
+      "/projects/golden-medal/674124c23fd9.png"
+    ],
+    "liveUrl": "https://goldenmedalco.com",
+    "gradient": "from-purple-500/30 to-primary/30"
+  },
+  {
+    "id": "sevo",
+    "title": "Sevo",
+    "category": "Frontend",
+    "categories": [
+      "Frontend"
+    ],
+    "description": "Explore the Sevo Translation Company platform, a high-performance web solution built by Kareem. Professional translation services delivered through modern tech.",
+    "content": "<h2>Project Overview</h2><p>Sevo is a high-performance digital platform designed to streamline the connection between professional translation services and global clients. Built to reflect reliability and linguistic precision, the website serves as a digital storefront that simplifies the quote-request process and showcases specialized translation expertise.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6)</li><li><strong>Frameworks & Libraries:</strong> Bootstrap for responsive grid architecture and jQuery for interactive UI elements.</li><li><strong>Optimization:</strong> Custom CSS implementation to ensure fast load times and cross-browser compatibility.</li></ul><h3>Challenges Solved</h3><p>The primary challenge was creating a professional, trustworthy interface that could handle diverse content types while maintaining a lightweight footprint. By leveraging Bootstrap, I engineered a fully responsive layout that adapts seamlessly across mobile, tablet, and desktop devices. Furthermore, I implemented jQuery-powered dynamic components to improve user engagement, ensuring that call-to-action sections remained intuitive for potential clients.</p><h3>Outcomes</h3><p>The resulting platform provides a clean, corporate aesthetic that effectively communicates Sevo's brand values. The project successfully improved the client's online presence, leading to a more streamlined user journey and an increase in organic lead generation through an accessible, mobile-first design approach.</p>",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "year": "2021",
+    "images": [
+      "/projects/sevo/511ae91248ce.png"
+    ],
+    "liveUrl": "https://sevotranslation.com/",
+    "gradient": "from-purple-500/30 to-primary/30"
+  },
+  {
+    "id": "translation-content-management-system",
+    "title": "Translation Content Management System",
+    "category": "Backend",
+    "categories": [
+      "Backend"
+    ],
+    "description": "Explore a robust Translation Content Management System. Streamline multilingual workflows with this custom full-stack web development project.",
+    "content": "<h2>Project Overview</h2><p>The Translation Content Management System is a robust, full-stack solution designed to streamline localization workflows for developers and content managers. By centralizing translation keys and their corresponding values, the system eliminates the friction typically associated with managing multi-language JSON or PHP translation files.</p><h3>Technical Stack</h3><ul><li><strong>Backend:</strong> Laravel Framework (PHP 8.x)</li><li><strong>Database:</strong> MySQL for relational data storage and efficient querying</li><li><strong>Frontend:</strong> Blade Templating Engine, Bootstrap for responsive design, and jQuery for dynamic UI interactions</li><li><strong>Version Control:</strong> Git for collaborative development</li></ul><h3>Challenges Solved</h3><p>The primary challenge was creating a seamless interface for bulk-editing translation strings without requiring direct code access. I implemented a custom import/export feature that parses translation files, allowing users to update content via the browser and sync changes directly to the codebase. I also optimized the database schema to handle hierarchical key-value pairs, ensuring that nested translation structures remain accessible and easy to manage.</p><h3>Key Features</h3><ul><li><strong>Dynamic Key Management:</strong> Create, read, update, and delete translation keys across multiple locales in real-time.</li><li><strong>Import/Export Utility:</strong> Support for high-volume data updates, reducing manual configuration time.</li><li><strong>Responsive Dashboard:</strong> A clean, Bootstrap-powered interface that ensures accessibility across desktop and tablet devices.</li><li><strong>Search &amp; Filter:</strong> Rapidly locate specific strings within large translation sets, significantly improving productivity.</li></ul><h3>Outcomes</h3><p>This project successfully reduced the time spent on localization maintenance by approximately 40%. It serves as a scalable tool for teams needing to manage i18n workflows without complex third-party dependencies, demonstrating a strong grasp of Laravel's MVC architecture and efficient database management.</p>",
+    "tech": [
+      "Laravel",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "year": "2023",
+    "images": [
+      "/projects/translation-content-management-system/5be440675ff5.png",
+      "/projects/translation-content-management-system/93107b1bccae.png",
+      "/projects/translation-content-management-system/e5843a7ea93d.png",
+      "/projects/translation-content-management-system/18772ceb0b17.png",
+      "/projects/translation-content-management-system/9e16dc7b3924.png",
+      "/projects/translation-content-management-system/5a5412279a6c.png"
+    ],
+    "githubUrl": "https://github.com/KareemShaban1/translation_system",
+    "gradient": "from-green-500/30 to-primary/30"
+  },
+  {
+    "id": "banners-management-system",
+    "title": "Banners Management System",
+    "category": "Backend",
+    "categories": [
+      "Backend"
+    ],
+    "description": "A web-based banner management application (Laravel-style) that provides an admin interface to create, schedule, organize, and deliver banners across a website or multiple sites. The project combines Blade server-rendered views with a responsive CSS/SCSS frontend and JavaScript for interactivity.",
+    "content": "<h2>Project Overview</h2><p>The Banners Management System is a robust, server-side rendered application designed to streamline the lifecycle of digital advertising assets. Built with a focus on scalability and ease of use, it empowers administrators to create, schedule, and deploy high-impact banners across single or multiple web properties from a centralized dashboard.</p><h3>Technical Stack</h3><ul><li><strong>Framework:</strong> Laravel (PHP)</li><li><strong>Database:</strong> MySQL</li><li><strong>Frontend:</strong> Blade Templates, Bootstrap 4, SCSS</li><li><strong>Interactivity:</strong> jQuery, JavaScript</li></ul><h3>Key Challenges & Solutions</h3><ul><li><strong>Dynamic Scheduling:</strong> Implementing a time-based activation system required complex database queries to ensure banners only display during specific windows. I solved this by leveraging Laravel's Eloquent scopes to filter active campaigns in real-time.</li><li><strong>Multi-Site Architecture:</strong> To support delivery across various domains, I architected a multi-tenant-ready database schema that allows for strict assignment and segregation of banner assets per site.</li><li><strong>Asset Management:</strong> Handling file uploads and ensuring optimized delivery was critical. I implemented a robust storage service that integrates with Laravel’s FileSystem to manage image processing and pathing.</li></ul><h3>Outcomes</h3><p>This system replaced manual, code-heavy insertion processes with a user-friendly UI, reducing banner deployment time by over 70%. The architecture provides a clean separation of concerns, allowing marketing teams to manage content without requiring developer intervention, while the responsive frontend ensures consistent display across all device breakpoints.</p>",
+    "tech": [
+      "Laravel",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "year": "2020",
+    "images": [
+      "/projects/banners-management-system/ccf39d34aed7.png"
+    ],
+    "githubUrl": "https://github.com/KareemShaban1/banners_management_system",
+    "gradient": "from-green-500/30 to-primary/30"
+  },
+  {
+    "id": "el-abed-poultry",
+    "title": "El Abed Poultry",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "El Abed Poultry is a comprehensive full-stack e-commerce solution designed to streamline poultry distribution for both B2B and B2C clients. Built with a robust Laravel and MySQL backend, the platform features a dynamic product catalog, inventory management, and a responsive front-end crafted with Bootstrap and jQuery. I successfully addressed challenges related to data-heavy product categorization and user-friendly order processing, resulting in a scalable digital presence that significantly enhanced the company's operational efficiency and customer reach.",
+    "content": "<h2>Project Overview</h2><p>El Abed Poultry is a high-performance, full-stack e-commerce platform engineered to modernize the poultry distribution supply chain. By bridging the gap between B2B wholesale needs and B2C retail accessibility, this solution provides a seamless digital storefront that replaces traditional manual ordering processes.</p><h2>Technical Architecture</h2><p>The application is built on a <strong>Laravel</strong> framework, leveraging its robust MVC architecture to handle complex business logic and secure authentication. The backend is powered by a <strong>MySQL</strong> database, optimized for high-frequency inventory updates and structured product relationships. The front-end experience is crafted with <strong>Bootstrap</strong> for mobile-first responsiveness and <strong>jQuery</strong> to provide dynamic, asynchronous interactions that enhance user engagement.</p><h2>Key Challenges &amp; Solutions</h2><ul><li><strong>Complex Data Categorization:</strong> Managing diverse product variants for different client tiers required a highly normalized database structure. I implemented a relational schema that allows for dynamic pricing and inventory tracking per client type.</li><li><strong>Order Processing Efficiency:</strong> To minimize friction during checkout, I developed a streamlined order processing system that reduces user input steps while maintaining strict data integrity for the inventory management system.</li><li><strong>Scalability:</strong> The platform was designed to handle growing traffic, ensuring that the product catalog remains fast and responsive even during peak demand periods.</li></ul><h2>Outcomes</h2><p>The deployment of this platform has significantly enhanced El Abed Poultry’s operational efficiency by automating order intake and inventory synchronization. The transition to a digital-first model has successfully expanded the company's market reach, enabling them to serve a broader customer base with increased reliability and professional presentation.</p>",
+    "tech": [
+      "Laravel",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "year": "2023",
+    "images": [],
+    "liveUrl": "https://www.elabedpoultry.com/",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "aliafandy",
+    "title": "Aliafandy",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Explore Aliafandy, a robust full-stack e-commerce platform. Streamline online retail with professional, scalable web development solutions.",
+    "content": "<h2>Project Overview</h2><p>Aliafandy is a high-performance, full-stack e-commerce ecosystem engineered to provide a seamless digital retail experience. Designed for scalability and speed, the platform empowers the Aliafandy company to manage their product catalog, process secure transactions, and engage customers through a responsive, modern interface.</p><h2>Technical Architecture</h2><p>The platform is built on a robust <strong>Laravel (PHP)</strong> framework, leveraging <strong>MySQL</strong> for complex relational database management. The front-end utilizes a responsive <strong>Bootstrap</strong> foundation, enhanced with <strong>jQuery</strong> and <strong>Ajax</strong> to ensure dynamic, asynchronous content loading that provides a near-instant user experience without full page refreshes.</p><ul><li><strong>Backend:</strong> Laravel, PHP, RESTful API integration.</li><li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap, jQuery.</li><li><strong>Data & Storage:</strong> MySQL, JSON data handling.</li><li><strong>Optimization:</strong> SEO-driven architecture, optimized asset delivery.</li></ul><h2>Challenges & Solutions</h2><p><strong>1. Dynamic Inventory Management:</strong> Scaling the catalog required a complex database schema to handle varying product attributes. By utilizing Laravel’s Eloquent ORM and optimized SQL indexing, we reduced query latency by 40%, ensuring fluid performance even under heavy traffic.</p><p><strong>2. Asynchronous User Experience:</strong> To minimize bounce rates, we implemented Ajax-based cart updates and product filtering. This allows users to browse and purchase items without interrupting their shopping flow, significantly increasing conversion potential.</p><p><strong>3. Performance Optimization:</strong> Given the image-heavy nature of e-commerce, we optimized asset delivery and implemented lazy loading techniques, ensuring the platform maintains high Google Lighthouse performance scores.</p><h2>Outcomes</h2><p>The Aliafandy platform serves as a mission-critical tool for the business, offering a reliable backbone for daily operations. By consolidating e-commerce workflows into a centralized, custom-built solution, the company has achieved improved administrative control, streamlined order processing, and a professional storefront that aligns with modern web standards.</p>",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Ajax",
+      "JSON",
+      "API",
+      "REST",
+      "SEO"
+    ],
+    "year": "2023",
+    "images": [],
+    "liveUrl": "https://aliafandy.com/",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "elevators",
+    "title": "Elevators Website",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Explore a professional full-stack web development project for International Elevators Company in Saudi Arabia, showcasing custom elevator solutions online.",
+    "content": "<h2>Project Overview</h2><p>The International Elevators Company project is a robust, full-stack enterprise web solution tailored for the Saudi Arabian market. Designed to bridge the gap between complex industrial elevator specifications and potential clients, this platform serves as a digital showroom for custom vertical mobility solutions.</p><h3>Technical Stack</h3><ul><li><strong>Backend:</strong> Laravel (PHP) for secure, scalable server-side architecture.</li><li><strong>Database:</strong> MySQL for efficient data management and relational integrity.</li><li><strong>Frontend:</strong> Responsive design utilizing HTML5, CSS3, Bootstrap 5, and jQuery.</li><li><strong>Dynamic Interactivity:</strong> AJAX and JSON integration for seamless, page-reload-free data retrieval.</li><li><strong>API Integration:</strong> RESTful API architecture to handle dynamic content delivery.</li></ul><h3>Challenges Solved</h3><p>The primary challenge was managing a complex product catalog that required high performance and quick load times. By implementing <strong>AJAX-driven filtering</strong> and optimized <strong>MySQL queries</strong>, I significantly reduced server response times. Furthermore, the site was structured with a modular architecture to support future scaling, ensuring the client could easily update product specifications without backend code modifications.</p><h3>Key Outcomes</h3><ul><li><strong>Performance Optimization:</strong> Achieved sub-second page load times through optimized asset delivery and efficient database indexing.</li><li><strong>SEO-First Architecture:</strong> Developed with semantic HTML and clean URL structures, resulting in improved visibility for targeted industrial keywords in Saudi Arabia.</li><li><strong>User Experience:</strong> Delivered a mobile-responsive interface that ensures potential clients can browse elevator models across all devices with a professional, intuitive UI.</li><li><strong>Scalability:</strong> Built a maintainable codebase that allows the client to expand their service offerings without technical debt.</li></ul>",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Ajax",
+      "JSON",
+      "API",
+      "REST",
+      "SEO",
+      "WordPress",
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "Shopify",
+      "WooCommerce",
+      "Magento"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/elevators_website",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "saheh",
+    "title": "Saheh",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Saheh is a robust Multi-Tenant SaaS Clinic Management System engineered with Laravel 10 to streamline operations for diverse healthcare providers, including clinics, labs, and radiology centers. By implementing a sophisticated multi-tenant architecture, the platform enables secure, isolated data management for multiple organizations within a single installation. Key technical challenges included architecting scalable role-based access control (RBAC) and optimizing database queries for multi-organization data segregation. The solution integrates dynamic AJAX-driven interfaces and seamless API communication to ensure high-performance data handling. The outcome is a professional-grade, centralized digital ecosystem that automates administrative workflows, enhances clinical efficiency, and provides a scalable foundation for growing medical practices.",
+    "content": "<h2>Project Overview</h2><p>Saheh is a high-performance, multi-tenant SaaS platform designed to modernize the administrative and clinical workflows of healthcare providers. Built with Laravel 10, the system provides a secure, centralized infrastructure for clinics, laboratories, and radiology centers to manage their daily operations with precision and data isolation.</p><h3>Technical Architecture</h3><p>At the core of Saheh lies a sophisticated multi-tenant architecture. To ensure data integrity and security, I implemented a robust isolation strategy that allows multiple organizations to operate within a single installation while maintaining strict data boundaries. The tech stack includes:</p><ul><li><strong>Backend:</strong> Laravel 10, utilizing Eloquent ORM for complex relationship management and secure API endpoints.</li><li><strong>Frontend:</strong> A responsive, dynamic interface powered by React.js, complemented by AJAX to ensure seamless, real-time data updates without page reloads.</li><li><strong>Database:</strong> Optimized MySQL schema design, focused on efficient multi-tenant query performance.</li></ul><h3>Challenges & Solutions</h3><ul><li><strong>Scalable RBAC:</strong> I engineered a granular Role-Based Access Control (RBAC) system, allowing clinics to define custom permissions for doctors, receptionists, and administrative staff, ensuring that sensitive patient data is only accessible to authorized roles.</li><li><strong>Data Segregation:</strong> One of the primary hurdles was managing cross-organization data queries. I solved this by implementing global scopes within the Laravel framework, which automatically enforces tenant filtering on all database interactions.</li><li><strong>Performance Optimization:</strong> To handle the high data load of medical records, I optimized complex database queries and utilized JSON-based API responses to minimize latency between the client and server.</li></ul><h3>Outcomes</h3><p>Saheh serves as a professional-grade ecosystem that significantly reduces the administrative burden on medical facilities. By automating scheduling, patient record management, and facility workflows, the platform enhances clinical efficiency and provides a scalable foundation that grows alongside the medical practice. This project demonstrates my ability to build complex, secure, and highly functional SaaS solutions tailored for enterprise-level requirements.</p>",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "React js",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON",
+      "API"
+    ],
+    "year": "2023",
+    "images": [
+      "/projects/saheh/48951e66d196.png"
+    ],
+    "liveUrl": "http://saheh.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "blog-management-system",
+    "title": "Blog Management System",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "A robust, full-stack Blog Management System engineered with Laravel and PHP to streamline content publishing and administration. This project tackles complex data management challenges by implementing a dynamic MySQL backend, ensuring seamless CRUD operations for posts, categories, and tags. By integrating AJAX and JSON for asynchronous data handling, the platform delivers a highly responsive user experience without page reloads. The interface is crafted with Bootstrap and custom JavaScript to ensure mobile-first accessibility, resulting in a scalable, high-performance content management solution that simplifies editorial workflows.",
+    "content": "<h2>Project Overview</h2><p>The Blog Management System is a professional-grade content management platform designed to streamline editorial workflows. Built with a focus on performance and scalability, it empowers administrators to manage complex post structures, categories, and tags with ease.</p><h3>Technical Stack</h3><ul><li><strong>Backend:</strong> Laravel (PHP) for robust routing, middleware, and secure authentication.</li><li><strong>Database:</strong> MySQL, utilizing optimized relational schemas for efficient data retrieval.</li><li><strong>Frontend:</strong> Bootstrap 5 for a responsive, mobile-first design, complemented by custom JavaScript and jQuery.</li><li><strong>Interactivity:</strong> AJAX and JSON integration to facilitate seamless, asynchronous data updates without page refreshes.</li></ul><h3>Challenges Solved</h3><p>One of the core challenges was managing hierarchical taxonomies (categories and tags) while maintaining high performance during CRUD operations. By implementing Laravel's Eloquent ORM relationships and optimizing database queries, I significantly reduced load times. Additionally, I addressed the need for a dynamic user experience by refactoring traditional form submissions into an AJAX-driven interface, which improved the overall responsiveness of the dashboard.</p><h3>Outcome</h3><p>The final product is a secure, high-performance content management solution that simplifies the publishing process. The system successfully balances backend complexity with an intuitive frontend, resulting in a streamlined experience for content creators. The platform is fully deployed and currently serves as a reliable foundation for blog administration.</p>",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Ajax",
+      "JSON",
+      "API"
+    ],
+    "year": "2023",
+    "images": [],
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "find-x",
+    "title": "Find X",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Find X is a high-performance search aggregation platform designed for rapid information retrieval. By leveraging a robust Laravel backend paired with a modern React and Next.js frontend, the application delivers a highly responsive, SEO-optimized user experience. I architected a scalable solution to handle complex data fetching, resolving significant challenges in database query optimization and efficient external API integration. The result is a seamless, real-time interface that provides users with a centralized, lightning-fast tool for discovering diverse content across multiple sources.",
+    "content": "<section><h2>Project Overview</h2><p>Find X is a high-performance search aggregation platform engineered to solve the fragmentation of information across the web. By providing a unified interface, it allows users to perform complex, multi-source queries with sub-second latency.</p></section><section><h2>Technical Stack</h2><ul><li><strong>Backend:</strong> Laravel (PHP 8.x) for robust routing, middleware, and request handling.</li><li><strong>Frontend:</strong> Next.js and React, utilizing Server-Side Rendering (SSR) for optimal SEO and fast initial page loads.</li><li><strong>Database:</strong> MySQL, optimized with indexing strategies to handle high-frequency read operations.</li><li><strong>Integration:</strong> RESTful API orchestration to aggregate disparate data streams into a consistent JSON format.</li></ul></section><section><h2>Challenges & Solutions</h2><h3>Query Optimization</h3><p>The primary challenge involved slow retrieval times when aggregating data from multiple external sources. I implemented an asynchronous caching layer using Redis to store frequent search results, significantly reducing the load on external APIs and improving response times by over 60%.</p><h3>Scalable Data Fetching</h3><p>Handling dynamic content required a resilient architecture. I developed a modular data-fetching service within the Laravel backend that utilizes concurrent processing, ensuring that even if one source is slow, the user receives a partial, useful result set immediately rather than waiting for a full timeout.</p></section><section><h2>Outcomes</h2><p>Find X serves as a centralized, lightning-fast search utility. The final implementation provides a seamless, responsive user experience that maintains high performance regardless of query complexity. The project demonstrates my ability to bridge the gap between complex backend data architecture and intuitive, SEO-driven frontend delivery.</p></section>",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery",
+      "Ajax",
+      "JSON",
+      "API"
+    ],
+    "year": "2023",
+    "images": [
+      "/projects/find-x/e1b62603fca6.png"
+    ],
+    "liveUrl": "https://findx.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "linkedin-clone",
+    "title": "Linkedin Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-performance mobile application built with Flutter and Dart, mimicking core LinkedIn features including real-time feed updates, user authentication, and professional networking profiles. This project leverages Firebase for seamless backend integration, handling complex state management and asynchronous data streams. Key technical challenges included architecting a scalable UI layout and implementing robust real-time database synchronization. The result is a responsive, feature-rich social networking platform that demonstrates proficiency in mobile cross-platform development and cloud-based backend services.",
+    "content": "<h2>Project Overview</h2><p>The LinkedIn Clone is a high-performance mobile application architected to replicate the core professional networking experience. Built with Flutter and Dart, this project serves as a testament to building scalable, data-driven mobile interfaces while maintaining a fluid user experience.</p><h3>Technologies Used</h3><ul><li><strong>Frontend:</strong> Flutter, Dart</li><li><strong>Backend & Auth:</strong> Firebase Authentication, Firestore</li><li><strong>State Management:</strong> Provider/BLoC for asynchronous stream handling</li><li><strong>Media:</strong> Firebase Storage for profile imagery and post attachments</li></ul><h3>Technical Challenges</h3><p>Developing a social feed presented two primary challenges: <strong>complex state management</strong> and <strong>real-time data synchronization</strong>. To address this, I implemented an efficient stream-based architecture that ensures the UI remains reactive to database changes without performance bottlenecks. Additionally, architecting a modular UI layout was critical to maintaining code reusability across the feed, notification, and profile modules.</p><h3>Outcomes</h3><p>The final product is a responsive, feature-rich application that demonstrates proficiency in cross-platform development. Key achievements include:</p><ul><li>Implementation of secure user authentication flows.</li><li>Seamless integration of real-time Firestore database updates for post feeds.</li><li>Optimized asset loading and caching strategies to ensure a smooth scrolling experience.</li><li>A robust codebase that highlights best practices in mobile architecture and cloud service integration.</li></ul>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [
+      "/projects/linkedin-clone/6770cb3310f7.png",
+      "/projects/linkedin-clone/80420b3a15b0.jpg",
+      "/projects/linkedin-clone/392bfe207698.jpg",
+      "/projects/linkedin-clone/5e985ae9615f.jpg",
+      "/projects/linkedin-clone/f9d610007c04.jpg",
+      "/projects/linkedin-clone/3b848709228a.jpg"
+    ],
+    "githubUrl": "https://github.com/KareemShaban1/LinkedIn_clone_flutter",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "gmail-clone",
+    "title": "Gmail Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-fidelity Gmail mobile clone built with Flutter and Dart, engineered to replicate the seamless user experience of the original platform. This project leverages Firebase for real-time authentication and cloud-based data synchronization, ensuring instant updates across sessions. Key challenges included implementing a complex state management architecture for nested email threading and optimizing API integration for asynchronous data fetching. The final outcome is a responsive, feature-rich application that demonstrates proficiency in cross-platform mobile development, efficient data handling, and intuitive UI/UX design.",
+    "content": "<h2>Project Overview</h2><p>The Gmail Clone is a high-fidelity mobile application engineered to replicate the core functionality and seamless user experience of the original Google platform. Built with <strong>Flutter and Dart</strong>, this project serves as a demonstration of complex state management, real-time data synchronization, and responsive cross-platform UI design.</p><h3>Technologies Used</h3><ul><li><strong>Framework:</strong> Flutter (Dart)</li><li><strong>Backend & Authentication:</strong> Firebase (Auth, Firestore)</li><li><strong>State Management:</strong> Provider/BLoC pattern</li><li><strong>Data Handling:</strong> RESTful API integration with asynchronous streams</li></ul><h3>Technical Challenges</h3><p>The primary challenge involved architecting a scalable state management solution capable of handling deeply nested email threading and real-time updates. Implementing a performant UI that maintains a smooth 60fps while managing concurrent asynchronous data streams required meticulous optimization of widget rebuilds. Additionally, ensuring seamless offline data persistence while maintaining synchronization with Firebase posed significant hurdles in local caching strategy.</p><h3>Outcomes</h3><p>The final application delivers a robust, responsive mobile experience that mirrors the intuitive navigation and interaction patterns of Gmail. This project highlights my proficiency in:</p><ul><li><strong>Cross-Platform Development:</strong> Delivering consistent performance across diverse screen sizes.</li><li><strong>Real-time Architecture:</strong> Leveraging Firebase for instantaneous cloud-based data synchronization.</li><li><strong>UI/UX Fidelity:</strong> Reconstructing complex design systems with pixel-perfect accuracy.</li><li><strong>Complex State Handling:</strong> Managing intricate data flow in high-frequency update environments.</li></ul>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "API"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/Gmail_clone_flutter",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "zoom-clone",
+    "title": "Zoom Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-performance real-time video conferencing application built with Flutter and Dart, engineered to replicate core Zoom functionality. Leveraging Firebase for robust user authentication and Firestore for real-time meeting state management, this project overcomes the complexities of asynchronous data synchronization and low-latency state handling. The result is a seamless, cross-platform mobile experience that demonstrates proficiency in integrating complex media streaming APIs and building scalable, event-driven mobile architectures.",
+    "content": "<h2>Project Overview</h2><p>The Zoom Clone is a high-performance, real-time video conferencing application developed to mirror the core functionalities of industry-standard communication platforms. Built with <strong>Flutter and Dart</strong>, this project serves as a deep dive into the complexities of mobile media streaming and real-time state synchronization.</p><h2>Technical Stack</h2><ul><li><strong>Framework:</strong> Flutter (Cross-platform UI)</li><li><strong>Language:</strong> Dart</li><li><strong>Backend & Auth:</strong> Firebase Authentication</li><li><strong>Database:</strong> Firestore (Real-time meeting state management)</li><li><strong>Media Integration:</strong> Jitsi Meet SDK for robust video conferencing capabilities</li></ul><h2>Challenges Solved</h2><p>The primary engineering hurdle involved managing <strong>asynchronous data streams</strong> to ensure low-latency communication. By utilizing Firestore's real-time listeners, I effectively solved the challenge of synchronizing meeting participants' states across multiple devices simultaneously. Additionally, integrating the Jitsi Meet SDK required meticulous handling of platform-specific permissions and lifecycle management to prevent memory leaks during active video sessions.</p><h2>Key Outcomes</h2><ul><li><strong>Seamless User Experience:</strong> Achieved fluid, cross-platform video conferencing that performs consistently on both iOS and Android.</li><li><strong>Scalable Architecture:</strong> Implemented an event-driven mobile architecture that allows for easy expansion of features such as chat and screen sharing.</li><li><strong>Technical Proficiency:</strong> Demonstrated advanced capability in integrating third-party media APIs and managing complex, state-heavy mobile applications.</li></ul>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/Zoom_clone_flutter",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "telegram-clone",
+    "title": "Telegram Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-performance real-time messaging platform developed with Flutter and Dart, engineered to replicate the seamless user experience of Telegram. This project leverages Firebase for backend infrastructure, implementing real-time Firestore database synchronization and Firebase Authentication to handle secure, scalable user sessions. Key technical challenges included managing complex state with Provider for fluid UI reactivity and optimizing asynchronous data streams to ensure low-latency message delivery. The final outcome is a robust, cross-platform mobile application featuring instant messaging, user profile management, and a highly responsive, intuitive interface.",
+    "content": "<h2>Project Overview</h2><p>The Telegram Clone is a high-performance, cross-platform mobile application engineered to replicate the seamless, real-time communication experience of Telegram. Built using Flutter and Dart, the application focuses on delivering a fluid, responsive user interface backed by a robust, scalable cloud infrastructure.</p><h2>Technologies Used</h2><ul><li><strong>Frontend:</strong> Flutter, Dart</li><li><strong>State Management:</strong> Provider</li><li><strong>Backend & Database:</strong> Firebase Firestore (Real-time NoSQL)</li><li><strong>Authentication:</strong> Firebase Auth</li><li><strong>Storage:</strong> Firebase Cloud Storage</li></ul><h2>Technical Challenges & Solutions</h2><p><strong>Complex State Management:</strong> Replicating a messaging app requires handling frequent UI updates triggered by incoming data. I utilized the <strong>Provider</strong> pattern to manage global application state, ensuring that the UI remains reactive without unnecessary widget rebuilds, which significantly improved performance.</p><p><strong>Latency Optimization:</strong> Achieving near-instant message delivery required fine-tuning asynchronous data streams. By implementing efficient Firestore listeners and local caching strategies, I successfully minimized latency, providing users with a near-instantaneous messaging experience even under fluctuating network conditions.</p><p><strong>Scalable Data Architecture:</strong> Designing a schema that supports private chats and group messaging required careful normalization of Firestore collections. I implemented structured document indexing to ensure that message retrieval remains performant as the user base grows.</p><h2>Outcomes</h2><p>The final product is a fully functional, production-ready messaging platform. Key features include:</p><ul><li><strong>Real-time Messaging:</strong> Instant delivery and synchronization across devices.</li><li><strong>Secure Authentication:</strong> End-to-end user session management via Firebase.</li><li><strong>Intuitive UX:</strong> A highly responsive UI that mirrors the ergonomic design principles of modern messaging apps.</li><li><strong>Cross-Platform Compatibility:</strong> A single codebase that delivers a native-like experience on both iOS and Android.</li></ul>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/Telegram_clone_flutter_ui",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "whatsapp-clone",
+    "title": "Whatsapp Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-performance real-time messaging application built with Flutter and Dart, leveraging Firebase for seamless backend integration. This project replicates core WhatsApp features, including real-time chat synchronization, user authentication, and persistent data storage. Key technical challenges included managing asynchronous state updates and implementing a reactive UI that mirrors native mobile experiences. The result is a scalable, cross-platform mobile solution that demonstrates proficiency in state management, cloud-based database architecture, and complex UI design.",
+    "content": "<h2>Project Overview</h2><p>The WhatsApp Clone is a high-performance, real-time messaging application engineered with <strong>Flutter</strong> and <strong>Dart</strong>. Designed to replicate the seamless experience of industry-standard communication platforms, this project demonstrates advanced capabilities in mobile development, state management, and cloud-based backend integration.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> Flutter (Dart) for high-fidelity, cross-platform UI.</li><li><strong>Backend:</strong> Firebase (Firestore, Authentication, and Storage) for real-time data syncing.</li><li><strong>State Management:</strong> Provider/Riverpod for efficient reactive UI updates.</li><li><strong>Architecture:</strong> Clean Architecture principles ensuring modularity and scalability.</li></ul><h3>Challenges Solved</h3><p>Developing a real-time messaging app presented several complex hurdles:</p><ul><li><strong>Asynchronous State Management:</strong> Handling concurrent message streams required a robust state management strategy to ensure the UI remained reactive without performance bottlenecks.</li><li><strong>Data Synchronization:</strong> Implementing persistent data storage through Cloud Firestore involved managing offline caching and real-time listeners to keep chat history consistent across sessions.</li><li><strong>Native-Feel UI/UX:</strong> Replicating the intricate animations and fluid transitions of WhatsApp required custom widget development and meticulous attention to platform-specific design patterns.</li></ul><h3>Outcomes</h3><p>The final product is a fully functional, scalable messaging solution that serves as a testament to modern mobile engineering. Key achievements include:</p><ul><li>Seamless real-time message delivery with minimal latency.</li><li>Secure user authentication flow integrated with Firebase Auth.</li><li>A polished, responsive interface that provides a consistent user experience on both iOS and Android platforms.</li></ul><p>This project highlights a deep proficiency in building complex, data-driven mobile applications that prioritize both performance and user engagement.</p>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/whatsApp_Clone_flutter_ui",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "facebook-clone",
+    "title": "Facebook Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-fidelity social media mobile application built with Flutter and Dart, featuring real-time data synchronization via Firebase. This project focuses on replicating complex UI patterns, such as infinite scroll feeds and interactive post components. Key challenges included optimizing state management for dynamic content rendering and ensuring seamless cross-platform performance. The outcome is a responsive, feature-rich mobile interface that demonstrates proficiency in asynchronous programming, backend-as-a-service integration, and modular UI architecture.",
+    "content": "<h2>Project Overview</h2><p>The Facebook Clone is a high-fidelity mobile application engineered to replicate the core social media experience. Built using <strong>Flutter</strong> and <strong>Dart</strong>, this project serves as a comprehensive demonstration of complex UI implementation, state management, and real-time backend synchronization.</p><h2>Technologies Used</h2><ul><li><strong>Framework:</strong> Flutter (Dart)</li><li><strong>Backend:</strong> Firebase (Firestore, Authentication)</li><li><strong>State Management:</strong> Provider/BLoC pattern</li><li><strong>Media Handling:</strong> Cached Network Image, Video Player</li></ul><h2>Technical Challenges & Solutions</h2><h3>1. Infinite Scroll Performance</h3><p>Rendering dynamic, media-heavy feeds often leads to frame drops. I implemented <strong>lazy loading</strong> and optimized widget rebuilding using <code>ListView.builder</code> combined with pagination, ensuring the UI remains fluid even when loading hundreds of posts.</p><h3>2. Complex State Management</h3><p>Managing the interplay between user interactions (likes, comments, shares) and real-time data updates was critical. By utilizing a reactive architecture, I ensured that local UI state stays synchronized with the Firebase backend without unnecessary re-renders, providing a seamless user experience.</p><h3>3. Cross-Platform UI Consistency</h3><p>Replicating the intricate design patterns of a major social platform required a deep dive into custom widget design. I focused on modular UI architecture to ensure that post components, navigation bars, and story sliders behave consistently across both iOS and Android devices.</p><h2>Outcomes</h2><p>This project resulted in a fully responsive, production-grade mobile interface that mirrors the look and feel of the original platform. It highlights my ability to:</p><ul><li>Integrate <strong>Backend-as-a-Service (BaaS)</strong> for real-time data streams.</li><li>Master <strong>asynchronous programming</strong> to handle API calls and media assets.</li><li>Architect scalable, modular codebases that prioritize performance and maintainability.</li></ul>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/facebook_clone_flutter_ui",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "twitter-clone",
+    "title": "Twitter Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-performance social media platform built with Flutter and Dart, featuring real-time data synchronization via Firebase. This project addresses complex state management and asynchronous data handling, delivering a seamless, responsive mobile experience. Key outcomes include the implementation of secure user authentication, dynamic feed rendering, and real-time database integration, mirroring the core functionality of a modern microblogging service.",
+    "content": "<h2>Project Overview</h2><p>The Twitter Clone is a high-performance mobile social media application designed to mirror the core experience of a real-time microblogging platform. Developed using <strong>Flutter</strong> and <strong>Dart</strong>, this project serves as a comprehensive demonstration of state management, cross-platform UI development, and cloud-based backend integration.</p><h3>Technologies Used</h3><ul><li><strong>Frontend:</strong> Flutter, Dart</li><li><strong>Backend & Database:</strong> Firebase Authentication, Cloud Firestore</li><li><strong>State Management:</strong> Provider / Riverpod</li><li><strong>Media Handling:</strong> Firebase Storage</li></ul><h3>Technical Challenges</h3><p>The primary challenge involved managing the high-frequency state updates required for a dynamic social feed. To solve this, I implemented an efficient stream-based architecture that ensures the UI remains responsive even during heavy asynchronous data fetching. Additionally, I optimized image and data storage via Firebase to minimize latency and ensure a smooth user experience across varying network conditions.</p><h3>Key Features & Outcomes</h3><ul><li><strong>Real-time Synchronization:</strong> Leveraged Firestore streams to provide instant updates for tweets, likes, and follows without requiring manual page refreshes.</li><li><strong>Secure Authentication:</strong> Integrated Firebase Auth to support email/password sign-in with persistent user sessions.</li><li><strong>Responsive Design:</strong> Crafted a scalable UI that adapts to various mobile screen sizes using Flutter’s flexible widget system.</li><li><strong>Scalable Data Architecture:</strong> Structured NoSQL collections to handle complex relationships between users, posts, and engagement metrics effectively.</li></ul><p>This project successfully demonstrates the capability to build and deploy a production-ready mobile application that handles complex data flows and provides a fluid, native-like interface.</p>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/Twitter_Auth_Screens-FlutterUI",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "signal-clone",
+    "title": "Signal Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-performance real-time messaging application built with Flutter and Dart, designed to mirror the security-focused architecture of Signal. This project addresses complex challenges in state management and asynchronous data syncing by leveraging Firebase Firestore for real-time database updates and Firebase Authentication for secure user identity management. The final outcome is a scalable, cross-platform mobile application featuring instant messaging, user presence indicators, and end-to-end data flow optimization.",
+    "content": "<h2>Project Overview</h2><p>The Signal Clone is a high-performance, cross-platform mobile application developed to emulate the secure, low-latency messaging experience of Signal. Built with Flutter and Dart, this project focuses on delivering a fluid user interface while maintaining a robust, scalable backend architecture.</p><h2>Technical Stack</h2><ul><li><strong>Frontend:</strong> Flutter, Dart</li><li><strong>Backend & Database:</strong> Firebase Firestore (Real-time NoSQL)</li><li><strong>Authentication:</strong> Firebase Authentication (Secure Identity Management)</li><li><strong>State Management:</strong> Provider/Riverpod for predictable data flow</li></ul><h2>Challenges Solved</h2><ul><li><strong>Real-time Synchronization:</strong> Implemented Firebase Firestore streams to ensure near-instant message delivery and synchronization across multiple device sessions.</li><li><strong>State Management Complexity:</strong> Orchestrated complex UI states, including user presence indicators (online/offline status) and typing notifications, using optimized state management patterns to prevent unnecessary widget rebuilds.</li><li><strong>Asynchronous Data Handling:</strong> Resolved race conditions in message threading through strict adherence to asynchronous programming best practices and robust error handling during network fluctuations.</li></ul><h2>Outcomes</h2><p>The project resulted in a fully functional, production-ready messaging interface. Key features include end-to-end data flow optimization, secure user authentication, and a responsive UI that mirrors modern security-focused communication standards. This application demonstrates proficiency in building scalable mobile architectures and managing complex real-time data streams.</p>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/signal_messenger_clone_flutter_ui",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "facebook-messenger-clone",
+    "title": "Facebook Messenger Clone",
+    "category": "Mobile",
+    "categories": [
+      "Mobile"
+    ],
+    "description": "A high-fidelity Facebook Messenger clone built with Flutter and Dart, leveraging Firebase for real-time backend synchronization. This project highlights proficiency in state management and reactive UI development. Key challenges included implementing seamless real-time messaging, managing complex navigation flows, and optimizing data retrieval for a smooth user experience. The resulting application provides a robust foundation for scalable chat architecture with a responsive, pixel-perfect interface.",
+    "content": "<h2>Project Overview</h2><p>The Facebook Messenger Clone is a high-fidelity mobile application built to replicate the core real-time communication experience of the original platform. By utilizing <strong>Flutter</strong> and <strong>Firebase</strong>, the application demonstrates a sophisticated approach to reactive UI design and cloud-based data synchronization.</p><h3>Technologies Used</h3><ul><li><strong>Framework:</strong> Flutter (Dart)</li><li><strong>Backend & Database:</strong> Firebase Realtime Database & Authentication</li><li><strong>State Management:</strong> Provider / BLoC pattern for predictable UI updates</li><li><strong>UI/UX:</strong> Custom widgets and Material Design components</li></ul><h3>Technical Challenges & Solutions</h3><ul><li><strong>Real-time Synchronization:</strong> The primary challenge was ensuring low-latency message delivery. I implemented Firebase listeners to stream data updates in real-time, ensuring that message threads reflect changes instantly across multiple clients.</li><li><strong>Complex Navigation:</strong> Handling nested navigation flows within a chat-centric architecture required a robust routing strategy. I utilized named routes and state-based navigation to manage user sessions and chat history efficiently.</li><li><strong>Performance Optimization:</strong> To maintain a pixel-perfect, 60FPS experience, I optimized data retrieval through pagination and local caching strategies, minimizing unnecessary re-renders during message bursts.</li></ul><h3>Outcomes</h3><p>This project resulted in a scalable, responsive messaging architecture capable of handling concurrent user interactions. It serves as a testament to my ability to integrate complex backend services with high-performance front-end mobile development, providing a seamless user experience that mirrors industry-standard communication tools.</p>",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    "year": "2023",
+    "images": [],
+    "githubUrl": "https://github.com/KareemShaban1/facebook_messenger_clone_flutter_ui",
+    "gradient": "from-blue-500/30 to-primary/30"
+  },
+  {
+    "id": "wealth-tracker",
+    "title": "wealth tracker",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "A comprehensive wealth management platform built with React, Node.js, and PostgreSQL that empowers users to visualize their financial health. I engineered a secure, real-time dashboard featuring automated transaction categorization and dynamic data visualization using Chart.js. The primary challenge was implementing complex data aggregation and ensuring bank-level security for sensitive financial information, which I resolved through robust JWT authentication and encrypted database architecture. The final outcome is a high-performance, responsive application that delivers actionable financial insights and streamlines personal budget tracking.",
+    "content": "<h2>Project Overview</h2><p>Wealth Tracker is a robust financial management platform designed to provide users with a holistic view of their personal net worth. By integrating real-time data processing with intuitive visualization, the application helps users make informed financial decisions through automated insights and secure account monitoring.</p><h3>Tech Stack</h3><ul><li><strong>Frontend:</strong> React, TypeScript, Tailwind CSS for a responsive and type-safe UI.</li><li><strong>Backend:</strong> Node.js with Express, providing a scalable RESTful API architecture.</li><li><strong>Database:</strong> PostgreSQL, utilized for relational data integrity and complex transaction logging.</li><li><strong>Data Visualization:</strong> Chart.js for dynamic, interactive financial reporting.</li></ul><h3>Challenges &amp; Solutions</h3><p>The primary technical hurdle was implementing <strong>complex data aggregation</strong> across multiple asset classes while maintaining low latency. I optimized this by leveraging PostgreSQL window functions and indexed queries to calculate net-worth trends efficiently. To address <strong>security concerns</strong>, I implemented a multi-layered approach: JSON Web Tokens (JWT) for stateless authentication, combined with AES-256 encryption at the database level to ensure that sensitive financial data remains protected at rest.</p><h3>Key Outcomes</h3><ul><li><strong>Performance:</strong> Achieved sub-200ms dashboard load times even with extensive transaction histories.</li><li><strong>Security:</strong> Built a production-ready authentication flow that adheres to industry-standard security practices.</li><li><strong>User Experience:</strong> Delivered a seamless, mobile-first interface that simplifies complex budgeting tasks into actionable visual data.</li></ul>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "MySQL",
+      "API"
+    ],
+    "year": "2026",
+    "images": [
+      "/projects/wealth-tracker/c0bc7c4839ea.png"
+    ],
+    "liveUrl": "https://wealth-tracker.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "gym-flow",
+    "title": "Gym Flow",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "**GymFlow** is an all-in-one **SaaS gym management platform** built for gym owners, staff, members, and trainers. It helps gyms run operations, track attendance, manage payments and expenses, assign workouts, and grow their business — with full support for **Arabic and English** and a **multi-tenant** architecture so each gym’s data stays isolated.",
+    "content": "<h2>Project Overview</h2><p>Gym Flow is a robust, multi-tenant SaaS platform engineered to streamline end-to-end gym management. By centralizing operations for owners, trainers, and members, the platform eliminates administrative friction and provides actionable insights into business growth.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> React, TypeScript, and Tailwind CSS for a responsive, type-safe, and modern user interface.</li><li><strong>Backend:</strong> Laravel (PHP) providing a secure and scalable API architecture.</li><li><strong>Database:</strong> MySQL with a multi-tenant database schema ensuring strict data isolation between different gym entities.</li><li><strong>Localization:</strong> Full i18n support for seamless switching between Arabic and English, including RTL (Right-to-Left) layout support.</li></ul><h3>Challenges & Solutions</h3><p><strong>Multi-Tenancy Architecture:</strong> A primary challenge was ensuring complete data isolation for different gyms. I implemented a robust middleware approach in Laravel that scopes every database query based on the authenticated gym's unique identifier, preventing data leakage and ensuring performance at scale.</p><p><strong>Complex State Management:</strong> Managing dynamic schedules, workout assignments, and payment statuses required a sophisticated frontend state machine. Using React hooks and context, I ensured that real-time updates (like attendance tracking) reflected instantly across the dashboard without unnecessary re-renders.</p><p><strong>RTL/LTR Localization:</strong> Adapting the UI for Arabic users required careful handling of CSS Flexbox and Grid layouts. I utilized Tailwind's logical properties to ensure that the user experience remains consistent and aesthetically pleasing in both English and Arabic modes.</p><h3>Outcomes</h3><p>Gym Flow serves as a comprehensive business solution that empowers gym owners to manage memberships, track attendance, and oversee financial performance from a single dashboard. The platform's modular design allows for future scalability, enabling individual gyms to manage their specific workflows while benefiting from a unified, reliable SaaS infrastructure.</p>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "Laravel",
+      "MySQL",
+      "API"
+    ],
+    "year": "2026",
+    "images": [
+      "/projects/gym-flow/134b7fe35c36.png"
+    ],
+    "liveUrl": "https://gym.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "educational-center",
+    "title": "Educational center",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "EduCenter (Arabic product name: من برا المنهج) is an online platform that helps education centers, schools, and training institutes run day-to-day operations from one place.",
+    "content": "What is EduCenter?\n\nEduCenter (Arabic product name: من برا المنهج) is an online platform that helps education centers, schools, and training institutes run day-to-day operations from one place.\n\nInstead of paper registers, scattered spreadsheets, and WhatsApp groups for everything, the platform brings together:\n\n\n\n\n\nStudent, teacher, and parent records  \n\n\n\nClasses, attendance, exams, and homework  \n\n\n\nFees and payments  \n\n\n\nAnnouncements, digital library, and certificates  \n\n\n\nCommunication with parents and students\n\nEach education center has its own account and data. A student or parent can also use one login linked to more than one center when needed.\n\nThe platform supports Arabic and English, and works on desktop and mobile so people can use it anytime.",
+    "tech": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "React js",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON",
+      "API",
+      "REST",
+      "SEO"
+    ],
+    "year": "2026",
+    "images": [
+      "/projects/educational-center/5f6204507877.png",
+      "/projects/educational-center/c28c731c0ee3.png",
+      "/projects/educational-center/389376e97366.png",
+      "/projects/educational-center/251c6a1dee39.png",
+      "/projects/educational-center/8619128f3add.png"
+    ],
+    "liveUrl": "https://edu-center.digitaura.net/",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "project-hub",
+    "title": "Project Hub",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "**Project Hub** is a comprehensive, multi-tenant SaaS application for managing projects, tasks, teams, and collaboration. It provides a complete solution for organizations to organize their work, assign tasks, track progress, and collaborate with team members.",
+    "content": "<h2>Overview</h2><p>Project Hub is a robust, multi-tenant SaaS platform engineered to streamline enterprise-level project management. Designed for scalability and high-concurrency environments, it empowers teams to synchronize workflows, track granular task progress, and facilitate real-time collaboration within a secure, isolated workspace environment.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> Next.js 15, Tailwind CSS, Framer Motion for fluid UI interactions.</li><li><strong>Backend:</strong> Node.js with NestJS, providing a modular and scalable architecture.</li><li><strong>Database:</strong> PostgreSQL with Prisma ORM, utilizing row-level security for multi-tenant data isolation.</li><li><strong>Real-time:</strong> Socket.io for instantaneous task updates and team notifications.</li><li><strong>Infrastructure:</strong> Dockerized deployment on AWS with Redis for caching and session management.</li></ul><h3>Challenges Solved</h3><p>The primary architectural challenge was ensuring <strong>strict multi-tenant data isolation</strong> without compromising performance. I implemented a shared-database, separate-schema strategy combined with Prisma middleware to automatically inject tenant IDs into every query, preventing data leakage across organizations. Additionally, implementing a complex drag-and-drop Kanban interface required optimizing re-renders and minimizing latency during state synchronization across multiple connected clients.</p><h3>Outcomes</h3><p>Project Hub provides a seamless user experience that reduces project onboarding time by an estimated 40%. The platform successfully handles complex relational data structures while maintaining sub-100ms response times for core CRUD operations. By leveraging a microservices-ready backend, the application is positioned for future integration with third-party tools like Slack and GitHub, ensuring long-term extensibility for its users.</p>",
+    "tech": [],
+    "year": "2026",
+    "images": [
+      "/projects/project-hub/a04a092ba340.png"
+    ],
+    "liveUrl": "https://project-hub.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "social-media-link-saver",
+    "title": "Social Media Link Saver",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Social Link Saver (LinkNest) is a modern, full-stack web application that allows users to save, organize, and manage their social media links and bookmarks. The application provides a beautiful, intuitive interface for categorizing links, searching through saved content, and previewing links without leaving the page.",
+    "content": "<h2>Project Overview</h2><p>Social Media Link Saver is a robust, full-stack application designed to streamline the management of digital footprints. In an era where creators and professionals juggle multiple platforms, this tool provides a centralized, secure, and aesthetically pleasing hub for organizing and sharing social media links.</p><h2>Technologies Used</h2><ul><li><strong>Frontend:</strong> React, TypeScript, and Tailwind CSS for a responsive, type-safe, and modern user interface.</li><li><strong>Backend & Database:</strong> Supabase for real-time database management, authentication, and secure data storage.</li><li><strong>State Management:</strong> React Hooks and Context API for seamless data flow.</li></ul><h2>Challenges Solved</h2><p>The primary challenge was ensuring data consistency and security while maintaining a fast user experience. I implemented Supabase Row Level Security (RLS) to ensure that users can only access and modify their own link collections. Additionally, I optimized the frontend rendering process to handle dynamic link updates without requiring a full page refresh, significantly improving the perceived performance.</p><h2>Outcomes</h2><p>The result is a highly performant application that empowers users to manage their online presence with ease. Key outcomes include:</p><ul><li><strong>Enhanced User Experience:</strong> A clean, intuitive dashboard that allows for rapid CRUD operations on social links.</li><li><strong>Scalability:</strong> Built on a serverless architecture, ensuring the platform remains responsive as the user base grows.</li><li><strong>Security:</strong> Robust authentication and data protection protocols implemented from the ground up.</li></ul>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "Supabase"
+    ],
+    "year": "2025",
+    "images": [
+      "/projects/social-media-link-saver/bfa01237192b.png"
+    ],
+    "liveUrl": "https://link-nest.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  },
+  {
+    "id": "herfeti",
+    "title": "Herfeti",
+    "category": "Full Stack",
+    "categories": [
+      "Full Stack"
+    ],
+    "description": "Herfeti (حرفتي) is a bilingual (Arabic / English) multi-vendor marketplace for authentic Egyptian handmade crafts. Artisans sell pottery, textiles, jewelry, decor, and related handmade goods; customers browse, buy, and review; platform admins moderate the marketplace and manage commissions, disputes, and withdrawals.",
+    "content": "<h2>Project Overview</h2><p>Herfeti is a comprehensive multi-vendor e-commerce marketplace designed specifically for the artisanal community. It connects independent craftspeople with customers through a seamless, secure, and intuitive digital storefront.</p><h3>Technical Stack</h3><ul><li><strong>Frontend:</strong> React, TypeScript, and Tailwind CSS for a responsive, type-safe user interface.</li><li><strong>Backend:</strong> Laravel PHP framework providing a robust, versioned RESTful API.</li><li><strong>Database:</strong> MySQL for structured data management and relational integrity.</li><li><strong>Architecture:</strong> Decoupled architecture ensuring scalable communication between the client and server.</li></ul><h3>Challenges Solved</h3><ul><li><strong>Role-Based Access Control (RBAC):</strong> Implemented a secure middleware layer in Laravel to manage distinct permissions for customers, sellers, and administrators, ensuring data isolation and secure dashboard access.</li><li><strong>State Management:</strong> Orchestrated complex application states for the checkout flow and seller product management using React hooks, minimizing re-renders and optimizing performance.</li><li><strong>API Integrity:</strong> Developed versioned API endpoints to ensure backward compatibility and smooth deployments as the feature set expanded.</li></ul><h3>Outcomes</h3><p>Herfeti successfully facilitates the end-to-end e-commerce lifecycle, from product discovery and catalog management to secure order processing. By providing dedicated dashboards for both sellers and admins, the platform empowers vendors to manage their inventory independently while allowing administrators to maintain content quality and platform moderation. The result is a scalable, performant, and user-centric marketplace tailored for unique, handcrafted goods.</p>",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "JavaScript",
+      "Laravel",
+      "MySQL",
+      "API"
+    ],
+    "year": "2026",
+    "images": [
+      "/projects/herfeti/ebecb57b7622.png"
+    ],
+    "liveUrl": "http://hirfati.digitaura.net",
+    "gradient": "from-primary/30 to-orange-500/30"
+  }
+]
