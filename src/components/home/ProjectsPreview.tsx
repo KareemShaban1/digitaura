@@ -2,29 +2,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { useRef } from "react";
+import { useProjects } from "@/lib/portfolio";
+import ProjectCover from "@/components/projects/ProjectCover";
 
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    category: "Web Development",
-    description: "A full-featured online shopping experience with real-time inventory.",
-    gradient: "from-primary/20 to-orange-500/20",
-  },
-  {
-    title: "HealthTech Mobile App",
-    category: "Mobile Development",
-    description: "Cross-platform health tracking app with AI-powered insights.",
-    gradient: "from-blue-500/20 to-primary/20",
-  },
-  {
-    title: "FinTech Dashboard",
-    category: "UI/UX Design",
-    description: "Intuitive financial analytics dashboard for enterprise clients.",
-    gradient: "from-green-500/20 to-primary/20",
-  },
-];
 
 const ProjectsPreview = () => {
+  const { data } = useProjects();
+  const projects = (data ?? []).slice(0, 3);
   const sectionRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -66,21 +50,20 @@ const ProjectsPreview = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
-              key={project.title}
+              key={project.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300"
             >
-              {/* Gradient Background */}
-              <div className={`aspect-[4/3] bg-gradient-to-br ${project.gradient} relative`}>
-                <div className="absolute inset-0 bg-card/50 backdrop-blur-sm" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 border-2 border-foreground/10 rounded-2xl rotate-12 group-hover:rotate-0 transition-transform duration-500" />
-                </div>
-              </div>
-              
+              <Link to={`/projects/${project.id}`} className="block aspect-[4/3] relative overflow-hidden">
+                <ProjectCover
+                  project={project}
+                  className="opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                />
+              </Link>
+
               {/* Content */}
               <div className="p-6 bg-background">
                 <span className="text-primary text-xs font-medium tracking-wider uppercase">
@@ -89,12 +72,15 @@ const ProjectsPreview = () => {
                 <h3 className="text-xl font-semibold mt-2 mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                   {project.description}
                 </p>
-                <button className="flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors">
+                <Link
+                  to={`/projects/${project.id}`}
+                  className="flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
+                >
                   View Project <ExternalLink size={14} />
-                </button>
+                </Link>
               </div>
             </motion.div>
           ))}

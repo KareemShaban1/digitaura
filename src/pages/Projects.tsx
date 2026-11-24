@@ -2,17 +2,19 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
-import { ExternalLink, ArrowRight } from "lucide-react";
-import { projects } from "@/data/projects";
-
-const categories = ["All", "Web", "Mobile", "Design", "Cloud"];
+import { ExternalLink, ArrowRight, Loader2 } from "lucide-react";
+import { useProjects } from "@/lib/portfolio";
+import ProjectCover from "@/components/projects/ProjectCover";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const { data: projects = [], isLoading, isError, refetch } = useProjects();
+
+  const categories = ["All", ...Array.from(new Set(projects.flatMap((p) => p.categories)))];
 
   const filteredProjects = activeCategory === "All"
     ? projects
-    : projects.filter(p => p.category === activeCategory);
+    : projects.filter((p) => p.categories.includes(activeCategory));
 
   return (
     <Layout>
@@ -64,6 +66,23 @@ const Projects = () => {
             ))}
           </motion.div>
 
+          {isLoading && (
+            <div className="flex justify-center py-16 text-muted-foreground">
+              <Loader2 className="animate-spin" size={32} />
+            </div>
+          )}
+          {isError && (
+            <div className="text-center py-16">
+              <p className="text-muted-foreground mb-4">Couldn't load projects right now.</p>
+              <button
+                onClick={() => refetch()}
+                className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-medium text-sm"
+              >
+                Try again
+              </button>
+            </div>
+          )}
+
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
@@ -72,17 +91,16 @@ const Projects = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
                 layout
                 className="group rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/30 transition-all duration-300"
               >
                 {/* Project Image */}
                 <Link to={`/projects/${project.id}`} className="block">
                   <div className={`aspect-video bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
-                    <img
-                      src={project.images[0]}
-                      alt={project.title}
-                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                    <ProjectCover
+                      project={project}
+                      className="opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                     />
                     <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors" />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-background/60">
@@ -96,9 +114,10 @@ const Projects = () => {
 
                 {/* Content */}
                 <div className="p-6">
-                  <span className="text-primary text-xs font-medium tracking-wider uppercase">
-                    {project.category}
-                  </span>
+                  <div className="flex items-center justify-between text-xs font-medium tracking-wider uppercase">
+                    <span className="text-primary">{project.category}</span>
+                    {project.year && <span className="text-muted-foreground">{project.year}</span>}
+                  </div>
                   <Link to={`/projects/${project.id}`}>
                     <h3 className="text-xl font-semibold mt-2 mb-3 group-hover:text-primary transition-colors">
                       {project.title}
