@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Layout from "@/components/layout/Layout";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, Github, Linkedin, Instagram, Youtube } from "lucide-react";
+import { socialLinks } from "@/data/site";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -174,6 +175,30 @@ const Contact = () => {
                     <h3 className="font-semibold mb-1">Office</h3>
                     <p className="text-muted-foreground">123 Tech Street, Silicon Valley, CA 94000</p>
                   </div>
+                </div>
+              </div>
+
+              {/* Social Links */}
+              <div>
+                <h3 className="font-semibold mb-4">Follow Us</h3>
+                <div className="flex flex-wrap gap-3">
+                  {[
+                    { href: socialLinks.github, label: "GitHub", Icon: Github },
+                    { href: socialLinks.linkedin, label: "LinkedIn", Icon: Linkedin },
+                    { href: socialLinks.instagram, label: "Instagram", Icon: Instagram },
+                    { href: socialLinks.youtube, label: "YouTube", Icon: Youtube },
+                  ].map(({ href, label, Icon }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 bg-card border border-border rounded-xl text-sm text-muted-foreground hover:text-primary hover:border-primary/40 transition-all"
+                    >
+                      <Icon size={18} />
+                      {label}
+                    </a>
+                  ))}
                 </div>
               </div>
 

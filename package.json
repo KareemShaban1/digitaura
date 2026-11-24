@@ -9,7 +9,8 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "sync:projects": "node scripts/sync-projects.mjs"
+    "sync:portfolio": "node scripts/sync-portfolio.mjs",
+    "sync:projects": "npm run sync:portfolio"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

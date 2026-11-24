@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Youtube } from "lucide-react";
+import { socialLinks } from "@/data/site";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -17,24 +18,23 @@ const Footer = () => {
               reality. Your vision, our expertise.
             </p>
             <div className="flex gap-4">
-              <a
-                href="#"
-                className="p-2 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
-              >
-                <Github size={20} />
-              </a>
-              <a
-                href="#"
-                className="p-2 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="#"
-                className="p-2 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
-              >
-                <Twitter size={20} />
-              </a>
+              {[
+                { href: socialLinks.github, label: "GitHub", Icon: Github },
+                { href: socialLinks.linkedin, label: "LinkedIn", Icon: Linkedin },
+                { href: socialLinks.instagram, label: "Instagram", Icon: Instagram },
+                { href: socialLinks.youtube, label: "YouTube", Icon: Youtube },
+              ].map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="p-2 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
             </div>
           </div>
 

@@ -3,18 +3,29 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import Layout from "@/components/layout/Layout";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, blogCategories, blogAuthor, formatPostDate } from "@/data/blogPosts";
 import { Input } from "@/components/ui/input";
 
-const categories = ["All", "Technology", "Architecture", "Design", "Security", "Company News", "Development"];
+const categories = ["All", ...blogCategories];
+
+const AuthorAvatar = ({ size }: { size: string }) => (
+  <span
+    className={`${size} rounded-full bg-primary/10 text-primary font-semibold flex items-center justify-center text-xs flex-shrink-0`}
+    aria-hidden="true"
+  >
+    {blogAuthor.initials}
+  </span>
+);
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  const query = searchQuery.toLowerCase();
   const filteredPosts = blogPosts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = post.title.toLowerCase().includes(query) ||
+      post.excerpt.toLowerCase().includes(query) ||
+      post.tags.some((tag) => tag.toLowerCase().includes(query));
     const matchesCategory = selectedCategory === "All" || post.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
@@ -116,28 +127,20 @@ const Blog = () => {
                         {featuredPost.excerpt}
                       </p>
                       <div className="flex items-center gap-4 mb-6">
-                        <img
-                          src={featuredPost.author.avatar}
-                          alt={featuredPost.author.name}
-                          className="w-10 h-10 rounded-full object-cover"
-                        />
+                        <AuthorAvatar size="w-10 h-10" />
                         <div>
                           <p className="text-sm font-medium text-foreground">
-                            {featuredPost.author.name}
+                            {blogAuthor.name}
                           </p>
                           <p className="text-xs text-muted-foreground">
-                            {featuredPost.author.role}
+                            {blogAuthor.role}
                           </p>
                         </div>
                       </div>
                       <div className="flex items-center gap-4 text-sm text-muted-foreground">
                         <span className="flex items-center gap-1">
                           <Calendar size={14} />
-                          {new Date(featuredPost.publishedAt).toLocaleDateString("en-US", {
-                            month: "short",
-                            day: "numeric",
-                            year: "numeric"
-                          })}
+                          {formatPostDate(featuredPost.publishedAt)}
                         </span>
                         <span className="flex items-center gap-1">
                           <Clock size={14} />
@@ -163,7 +166,7 @@ const Blog = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
               >
                 <Link to={`/blog/${post.slug}`} className="block group h-full">
                   <div className="bg-card border border-border rounded-xl overflow-hidden h-full flex flex-col hover:border-primary/50 transition-all duration-300">
@@ -171,6 +174,7 @@ const Blog = () => {
                       <img
                         src={post.coverImage}
                         alt={post.title}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute top-4 left-4">
@@ -188,13 +192,9 @@ const Blog = () => {
                       </p>
                       <div className="flex items-center justify-between pt-4 border-t border-border">
                         <div className="flex items-center gap-2">
-                          <img
-                            src={post.author.avatar}
-                            alt={post.author.name}
-                            className="w-8 h-8 rounded-full object-cover"
-                          />
+                          <AuthorAvatar size="w-8 h-8" />
                           <span className="text-xs text-muted-foreground">
-                            {post.author.name}
+                            {formatPostDate(post.publishedAt)}
                           </span>
                         </div>
                         <span className="text-xs text-muted-foreground flex items-center gap-1">

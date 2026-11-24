@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowLeft, Share2, Linkedin, Twitter, Facebook } from "lucide-react";
 import Layout from "@/components/layout/Layout";
-import { getBlogPostBySlug, getRelatedPosts, blogPosts } from "@/data/blogPosts";
+import { getBlogPostBySlug, getRelatedPosts, blogAuthor, formatPostDate } from "@/data/blogPosts";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -44,24 +44,21 @@ const BlogPost = () => {
 
             <div className="flex flex-wrap items-center gap-6 mb-8">
               <div className="flex items-center gap-3">
-                <img
-                  src={post.author.avatar}
-                  alt={post.author.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
+                <span
+                  className="w-12 h-12 rounded-full bg-primary/10 text-primary font-semibold flex items-center justify-center"
+                  aria-hidden="true"
+                >
+                  {blogAuthor.initials}
+                </span>
                 <div>
-                  <p className="font-medium text-foreground">{post.author.name}</p>
-                  <p className="text-sm text-muted-foreground">{post.author.role}</p>
+                  <p className="font-medium text-foreground">{blogAuthor.name}</p>
+                  <p className="text-sm text-muted-foreground">{blogAuthor.role}</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1">
                   <Calendar size={14} />
-                  {new Date(post.publishedAt).toLocaleDateString("en-US", {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric"
-                  })}
+                  {formatPostDate(post.publishedAt, "long")}
                 </span>
                 <span className="flex items-center gap-1">
                   <Clock size={14} />
@@ -101,45 +98,10 @@ const BlogPost = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="prose prose-lg prose-invert max-w-none"
-            >
-              <div className="text-foreground leading-relaxed space-y-6">
-                {post.content.split('\n\n').map((paragraph, index) => {
-                  if (paragraph.startsWith('## ')) {
-                    return (
-                      <h2 key={index} className="text-2xl font-bold text-foreground mt-8 mb-4">
-                        {paragraph.replace('## ', '')}
-                      </h2>
-                    );
-                  }
-                  if (paragraph.startsWith('### ')) {
-                    return (
-                      <h3 key={index} className="text-xl font-semibold text-foreground mt-6 mb-3">
-                        {paragraph.replace('### ', '')}
-                      </h3>
-                    );
-                  }
-                  if (paragraph.startsWith('- ')) {
-                    const items = paragraph.split('\n').filter(item => item.startsWith('- '));
-                    return (
-                      <ul key={index} className="list-disc list-inside space-y-2 text-muted-foreground">
-                        {items.map((item, i) => (
-                          <li key={i}>{item.replace('- ', '')}</li>
-                        ))}
-                      </ul>
-                    );
-                  }
-                  if (paragraph.trim()) {
-                    return (
-                      <p key={index} className="text-muted-foreground">
-                        {paragraph}
-                      </p>
-                    );
-                  }
-                  return null;
-                })}
-              </div>
-            </motion.article>
+              className="project-content text-lg min-w-0"
+              /* HTML authored in the portfolio CMS (copied by npm run sync:portfolio) */
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
 
             {/* Sidebar */}
             <motion.aside

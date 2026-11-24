@@ -198,3 +198,18 @@
 .project-content img {
   @apply rounded-xl my-6;
 }
+.project-content pre {
+  @apply my-6 p-4 rounded-xl bg-secondary border border-border overflow-x-auto text-sm leading-relaxed;
+}
+.project-content code {
+  @apply font-mono text-[0.875em] text-foreground;
+}
+.project-content :not(pre) > code {
+  @apply px-1.5 py-0.5 rounded bg-secondary;
+}
+.project-content blockquote {
+  @apply my-6 pl-4 border-l-4 border-primary/50 italic;
+}
+.project-content em {
+  @apply italic;
+}

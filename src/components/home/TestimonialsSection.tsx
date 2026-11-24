@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { clients } from "@/data/site";
 
 const testimonials = [
   {
@@ -233,21 +234,28 @@ const TestimonialsSection = () => {
           <p className="text-sm text-muted-foreground mb-8">
             Trusted by innovative companies
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
-            {[
-              "TechStart",
-              "InnovateLab",
-              "FinanceFlow",
-              "HealthTech",
-              "RetailMax",
-            ].map((company) => (
-              <span
-                key={company}
-                className="text-lg md:text-xl font-bold text-muted-foreground tracking-wider"
-              >
-                {company}
-              </span>
-            ))}
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+            {clients.map((client) => {
+              const tile = (
+                <span
+                  className="flex items-center justify-center h-20 w-32 md:w-36 p-3 rounded-xl bg-white/90 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  title={client.name}
+                >
+                  {client.logo ? (
+                    <img src={client.logo} alt={client.name} loading="lazy" className="max-h-full max-w-full object-contain" />
+                  ) : (
+                    <span className="text-sm font-bold text-neutral-700 capitalize">{client.name}</span>
+                  )}
+                </span>
+              );
+              return client.website ? (
+                <a key={client.name} href={client.website} target="_blank" rel="noopener noreferrer">
+                  {tile}
+                </a>
+              ) : (
+                <span key={client.name}>{tile}</span>
+              );
+            })}
           </div>
         </motion.div>
       </div>

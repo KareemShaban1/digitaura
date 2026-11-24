@@ -1,0 +1,148 @@
+{
+  "facts": [
+    {
+      "title": "Years of Experience",
+      "value": "4 +"
+    },
+    {
+      "title": "Companies Worked With",
+      "value": "5"
+    },
+    {
+      "title": "Projects Completed",
+      "value": "33 +"
+    },
+    {
+      "title": "Client Satisfaction",
+      "value": "95 %"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Bootstrap",
+      "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.",
+      "value": 75
+    },
+    {
+      "name": "Css",
+      "description": "Css is the language for describing the presentation of Web pages, including colors, layout, and fonts.",
+      "value": 70
+    },
+    {
+      "name": "Html",
+      "description": "Html is the standard markup language for creating web pages.",
+      "value": 80
+    },
+    {
+      "name": "JavaScript",
+      "description": "JavaScript is the programming language of the Web.",
+      "value": 70
+    },
+    {
+      "name": "jQuery",
+      "description": "jQuery is a fast, small, and feature-rich JavaScript library.",
+      "value": 75
+    },
+    {
+      "name": "Laravel",
+      "description": "Laravel is a web application framework with expressive, elegant syntax.",
+      "value": 90
+    },
+    {
+      "name": "MySQL",
+      "description": "MySQL is a relational database management system.",
+      "value": 70
+    },
+    {
+      "name": "PHP",
+      "description": "PHP is a server-side scripting language designed for web development.",
+      "value": 70
+    },
+    {
+      "name": "React Js",
+      "description": "React.js  is an open-source frontend JavaScript library used primarily for building interactive user interfaces (UIs) for websites and single-page applications",
+      "value": 70
+    },
+    {
+      "name": "Tailwind",
+      "description": "Tailwind is a utility-first CSS framework for rapidly building custom designs.",
+      "value": 70
+    },
+    {
+      "name": "Vue.js",
+      "description": "Vue.js is a progressive JavaScript framework for building user interfaces.",
+      "value": 60
+    }
+  ],
+  "timeline": [
+    {
+      "title": "Backend Developer",
+      "organization": "Jmskef",
+      "description": "",
+      "startDate": "Aug 2023",
+      "endDate": "Oct 2023"
+    },
+    {
+      "title": "Full Stack Developer",
+      "organization": "Elite Academy",
+      "description": "",
+      "startDate": "Dec 2023",
+      "endDate": "Present"
+    },
+    {
+      "title": "Full Stack Developer",
+      "organization": "Quantum Technical",
+      "description": "",
+      "startDate": "Dec 2025",
+      "endDate": "Present"
+    },
+    {
+      "title": "Full Stack Developer",
+      "organization": "Support Plus",
+      "description": "",
+      "startDate": "Apr 2026",
+      "endDate": "Jun 2026"
+    }
+  ],
+  "clients": [
+    {
+      "name": "el abed",
+      "website": "http://elabedpoultry.com/",
+      "logo": "/clients/eba8d88c02ee.png"
+    },
+    {
+      "name": "el tab3een",
+      "website": "https://new.eltab3een.com/",
+      "logo": "/clients/57804a9696af.jpg"
+    },
+    {
+      "name": "Elite Academy",
+      "website": "https://new.eliteacademy.eu/",
+      "logo": "/clients/abbbe4a46175.png"
+    },
+    {
+      "name": "golden medal co",
+      "website": "https://goldenmedalco.com/",
+      "logo": "/clients/66be9916a3a1.webp"
+    },
+    {
+      "name": "resala",
+      "logo": "/clients/06642c7fa73f.png"
+    },
+    {
+      "name": "servo",
+      "website": "http://servo.eltab3een.com/",
+      "logo": "/clients/a0783f98fa2c.webp"
+    },
+    {
+      "name": "sevo translation co",
+      "website": "https://sevotranslation.com/",
+      "logo": "/clients/d782ae69e1a4.png"
+    },
+    {
+      "name": "tebbplus",
+      "website": "http://tebbplus.com/",
+      "logo": "/clients/01ae499c0e27.webp"
+    }
+  ]
+}

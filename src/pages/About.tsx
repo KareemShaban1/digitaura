@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/layout/Layout";
-import { Target, Users, Zap, Award, Heart, Globe } from "lucide-react";
+import { Target, Users, Zap, Award, Heart, Globe, Briefcase } from "lucide-react";
+import { facts, skills, timeline } from "@/data/site";
 
 const values = [
   {
@@ -33,13 +34,6 @@ const values = [
     title: "Impact",
     description: "Creating solutions that make a real difference.",
   },
-];
-
-const team = [
-  { name: "Alex Chen", role: "CEO & Founder", initial: "AC" },
-  { name: "Sarah Johnson", role: "CTO", initial: "SJ" },
-  { name: "Michael Park", role: "Lead Designer", initial: "MP" },
-  { name: "Emily Davis", role: "Senior Developer", initial: "ED" },
 ];
 
 const About = () => {
@@ -115,18 +109,12 @@ const About = () => {
                 </div>
                 <div className="absolute bottom-6 left-6 right-6 bg-background/80 backdrop-blur-sm p-6 rounded-2xl">
                   <div className="grid grid-cols-2 gap-4 text-center">
-                    <div>
-                      <div className="text-3xl font-bold text-gradient">8+</div>
-                      <div className="text-sm text-muted-foreground">Years</div>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-bold text-gradient">
-                        150+
+                    {facts.map((fact) => (
+                      <div key={fact.title}>
+                        <div className="text-3xl font-bold text-gradient">{fact.value}</div>
+                        <div className="text-sm text-muted-foreground">{fact.title}</div>
                       </div>
-                      <div className="text-sm text-muted-foreground">
-                        Projects
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -175,7 +163,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Experience Section */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-6">
           <motion.div
@@ -185,30 +173,79 @@ const About = () => {
             className="text-center mb-16"
           >
             <span className="text-primary font-medium text-sm tracking-wider uppercase">
-              Our Team
+              Experience
             </span>
             <h2 className="text-4xl font-bold mt-4">
-              Meet the <span className="text-gradient">Experts</span>
+              Where We've <span className="text-gradient">Worked</span>
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+          <ol className="max-w-3xl mx-auto relative border-l border-border ml-3 md:mx-auto">
+            {timeline.map((entry, index) => (
+              <motion.li
+                key={`${entry.organization}-${entry.startDate}`}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center group"
+                className="relative pl-8 pb-10 last:pb-0"
               >
-                <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <span className="text-3xl font-bold text-primary">
-                    {member.initial}
-                  </span>
+                <span className="absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full bg-primary ring-4 ring-card" />
+                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
+                  <Briefcase size={14} className="text-primary" />
+                  {entry.startDate} – {entry.endDate}
                 </div>
-                <h3 className="text-lg font-semibold">{member.name}</h3>
-                <p className="text-muted-foreground text-sm">{member.role}</p>
+                <h3 className="text-xl font-semibold">{entry.title}</h3>
+                <p className="text-primary font-medium">{entry.organization}</p>
+                {entry.description && (
+                  <p className="text-muted-foreground text-sm mt-2">{entry.description}</p>
+                )}
+              </motion.li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-24">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="text-primary font-medium text-sm tracking-wider uppercase">
+              Skills
+            </span>
+            <h2 className="text-4xl font-bold mt-4">
+              Our <span className="text-gradient">Tech Stack</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl mx-auto">
+            {[...skills].sort((a, b) => b.value - a.value).map((skill, index) => (
+              <motion.div
+                key={skill.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: (index % 2) * 0.1 }}
+                title={skill.description}
+              >
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">{skill.name}</span>
+                  <span className="text-sm text-muted-foreground">{skill.value}%</span>
+                </div>
+                <div className="h-2 rounded-full bg-secondary overflow-hidden">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${skill.value}%` }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="h-full rounded-full bg-gradient-to-r from-primary to-orange-400"
+                  />
+                </div>
               </motion.div>
             ))}
           </div>

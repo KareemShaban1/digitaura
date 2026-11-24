@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Code2, Sparkles } from "lucide-react";
 import { useHeroParallax } from "@/hooks/useParallax";
+import { facts } from "@/data/site";
 
 const HeroSection = () => {
   const { backgroundY, contentY, opacity, scale } = useHeroParallax();
@@ -134,17 +135,12 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
           >
-            {[
-              { value: "150+", label: "Projects Delivered" },
-              { value: "50+", label: "Happy Clients" },
-              { value: "8+", label: "Years Experience" },
-              { value: "24/7", label: "Support" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
+            {facts.map((stat) => (
+              <div key={stat.title} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-sm text-muted-foreground">{stat.title}</div>
               </div>
             ))}
           </motion.div>
